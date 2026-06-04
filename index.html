@@ -26,19 +26,22 @@
         <div class="absolute inset-0 overflow-hidden pointer-events-none z-10"><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
 
-            <!-- SECCIÓN SUPERIOR DE TEXTOS -->
-            <div class="text-center max-w-4xl mx-auto mb-10">
-                <span class="inline-flex items-center gap-2 bg-blue-500/10 text-blue-400 text-xs font-black px-4 py-2 rounded-full uppercase tracking-widest border border-blue-500/30 mb-6 shadow-[0_0_15px_rgba(59,130,246,0.2)]"><i class="fa-solid fa-shield-halved"></i> Control Centralizado Antifraude y Métricas Reales</span>
-                <h1 class="bubble-title text-4xl sm:text-6xl font-black tracking-tight leading-none uppercase">BLINDA TU CAJA Y OPERACIÓN CON <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400">WASH CONTROL PRO</span></h1>
-                <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">Toma el control absoluto de tu autolavado desde un único dispositivo en pista. Monitorea el flujo diario, blíndate contra reclamaciones falsas y descarga cierres de caja perfectos en Excel.</p>
+            <!-- BLOQUE DE CABECERA EN DOS COLUMNAS: LOGO A LA IZQUIERDA Y TEXTOS A LA DERECHA -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center max-w-6xl mx-auto mb-16">
+                <!-- Columna Izquierda: El Logo Imponente -->
+                <div class="md:col-span-5 flex justify-center lg:justify-end">
+                    <img src="logo.jpg" alt="Wash Control Pro Emblema" class="w-full max-w-[280px] sm:max-w-[340px] md:max-w-full object-contain rounded-2xl shadow-[0_0_50px_rgba(59,130,246,0.2)] border border-blue-500/10 bg-slate-950/40 p-1">
+                </div>
+                
+                <!-- Columna Derecha: Títulos y Textos Comerciales -->
+                <div class="md:col-span-7 text-center md:text-left flex flex-col items-center md:items-start">
+                    <span class="inline-flex items-center gap-2 bg-blue-500/10 text-blue-400 text-xs font-black px-4 py-2 rounded-full uppercase tracking-widest border border-blue-500/30 mb-6 shadow-[0_0_15px_rgba(59,130,246,0.2)]"><i class="fa-solid fa-shield-halved"></i> Control Centralizado Antifraude y Métricas Reales</span>
+                    <h1 class="bubble-title text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight uppercase">BLINDA TU CAJA Y OPERACIÓN CON <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400">WASH CONTROL PRO</span></h1>
+                    <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl">Toma el control absoluto de tu autolavado desde un único dispositivo en pista. Monitorea el flujo diario, blíndate contra reclamaciones falsas y descarga cierres de caja perfectos en Excel.</p>
+                </div>
             </div>
 
-            <!-- NUEVO CONTENEDOR DEL LOGO: UBICADO ABAJO, MÁS GRANDE Y CON TODO SU CONTORNO -->
-            <div class="flex justify-center mb-16">
-                <img src="logo.jpg" alt="Wash Control Pro Emblema" class="w-full max-w-md sm:max-w-lg object-contain rounded-2xl shadow-[0_0_50px_rgba(59,130,246,0.25)] border border-blue-500/10 bg-slate-950/40 p-1">
-            </div>
-
-            <!-- ENTORNO VISUAL DE PRESENTACIÓN CORREGIDO: ALTURAS ALINEADAS SIMÉTRICAMENTE -->
+            <!-- ENTORNO VISUAL DE PRESENTACIÓN: ALTURAS ALINEADAS SIMÉTRICAMENTE -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-6xl mx-auto mb-16">
                 <!-- Contenedor Izquierdo: Operario en Pista -->
                 <div class="lg:col-span-6 h-full flex flex-col justify-between">
@@ -153,7 +156,6 @@
                         <button onclick="cambiarMetodo('qr')" id="btn-tab-qr" class="w-1/2 text-center py-2 text-xs font-bold uppercase tracking-wider rounded-md bg-blue-600 text-white transition-all"><i class="fa-solid fa-qrcode mr-1"></i> Código QR</button>
                         <button onclick="cambiarMetodo('breb')" id="btn-tab-breb" class="w-1/2 text-center py-2 text-xs font-bold uppercase tracking-wider rounded-md text-slate-400 hover:text-white transition-all"><i class="fa-solid fa-bolt mr-1"></i> Sistema Bre-B</button>
                     </div>
-                    <!-- Foto QR enlazada correctamente -->
                     <div id="contenido-qr" class="bg-white text-slate-900 p-4 rounded-xl shadow-2xl space-y-3 text-center transition-all">
                         <div class="flex items-center justify-center gap-2 font-black text-xs text-[#002447] uppercase tracking-wider"><i class="fa-solid fa-building-columns"></i> QR Banco de Bogotá</div>
                         <div class="w-full max-w-[180px] mx-auto aspect-square bg-slate-100 rounded-lg flex items-center justify-center border border-slate-200 overflow-hidden">
