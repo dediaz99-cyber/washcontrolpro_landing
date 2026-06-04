@@ -20,7 +20,9 @@
 </head>
 <body class="bg-[#06040a] text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
     <header class="relative overflow-hidden min-h-screen flex items-center pt-24 pb-20">
+        <!-- Imagen de fondo Banner integrada por IA -->
         <div class="absolute inset-0 z-0">
+            <img src="banner.jpeg" alt="Fondo" class="w-full h-full object-cover opacity-25 filter blur-xs">
             <div class="absolute inset-0 bg-gradient-to-b from-[#06040a]/90 via-[#06040a]/40 to-[#06040a]"></div>
         </div>
         <div class="absolute inset-0 overflow-hidden pointer-events-none z-10"><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div></div>
@@ -38,8 +40,9 @@
                             <div class="bg-slate-900 text-[11px] text-slate-400 px-8 py-1 rounded-md border border-slate-800 flex items-center gap-1.5"><i class="fa-solid fa-lock text-emerald-400 text-[9px]"></i> washcontrolpro.github.io</div>
                             <div class="w-10"></div>
                         </div>
-                        <div class="bg-[#f3f4f6] overflow-y-auto flex-grow rounded-b-lg flex items-center justify-center min-h-[400px]">
-                            <p class="text-slate-500 font-bold text-sm p-6 text-center">📱 [Aquí se cargará la imagen de tu aplicación: dasboar car wash pro _2.jpeg]</p>
+                        <!-- Imagen de la aplicación real cargada -->
+                        <div class="bg-slate-950 overflow-y-auto flex-grow rounded-b-lg flex items-center justify-center min-h-[400px]">
+                            <img src="operario.jpeg" alt="Dashboard Wash Control Pro" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -65,11 +68,17 @@
     </header>
 
     <section id="precios" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-slate-950/40 rounded-3xl border border-slate-900 my-10">
-        <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="text-center max-w-2xl mx-auto mb-12">
             <span class="text-blue-400 font-bold text-xs uppercase tracking-widest">SISTEMA COMPLETO DE POR VIDA</span>
             <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight mt-2">Nuestras 3 Versiones Comerciales</h2>
             <p class="mt-4 text-sm text-slate-400">Adquiera su licencia mediante un único pago. Sin contratos ni mensualidades.</p>
         </div>
+
+        <!-- Tarjeta Comparativa Visual de Krea integrada -->
+        <div class="max-w-4xl mx-auto mb-16 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 shadow-2xl">
+            <img src="comparativa.jpeg" alt="Comparativa de Versiones" class="w-full object-cover">
+        </div>
+
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
             <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between shadow-xl">
                 <div>
@@ -133,10 +142,11 @@
                         <button onclick="cambiarMetodo('qr')" id="btn-tab-qr" class="w-1/2 text-center py-2 text-xs font-bold uppercase tracking-wider rounded-md bg-blue-600 text-white transition-all"><i class="fa-solid fa-qrcode mr-1"></i> Código QR</button>
                         <button onclick="cambiarMetodo('breb')" id="btn-tab-breb" class="w-1/2 text-center py-2 text-xs font-bold uppercase tracking-wider rounded-md text-slate-400 hover:text-white transition-all"><i class="fa-solid fa-bolt mr-1"></i> Sistema Bre-B</button>
                     </div>
+                    <!-- Foto QR enlazada correctamente -->
                     <div id="contenido-qr" class="bg-white text-slate-900 p-4 rounded-xl shadow-2xl space-y-3 text-center transition-all">
                         <div class="flex items-center justify-center gap-2 font-black text-xs text-[#002447] uppercase tracking-wider"><i class="fa-solid fa-building-columns"></i> QR Banco de Bogotá</div>
                         <div class="w-full max-w-[180px] mx-auto aspect-square bg-slate-100 rounded-lg flex items-center justify-center border border-slate-200 overflow-hidden">
-                            <img src="qr-bogota.png" alt="QR Banco de Bogotá" class="w-full h-full object-contain p-1">
+                            <img src="qr-pago.jpg" alt="QR Banco de Bogotá" class="w-full h-full object-contain p-1">
                         </div>
                         <p class="text-[10px] text-slate-500 font-medium leading-tight">Escanee el código QR desde la aplicación de su banco para transferir directo a la Cuenta de Ahorros.</p>
                     </div>
