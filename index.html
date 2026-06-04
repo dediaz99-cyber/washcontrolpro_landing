@@ -19,53 +19,61 @@
     </style>
 </head>
 <body class="bg-[#06040a] text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
-    <header class="relative overflow-hidden min-h-screen flex flex-col justify-center pt-28 pb-20">
-        <!-- Imagen de fondo Banner integrada por IA -->
+    <header class="relative overflow-hidden min-h-screen flex flex-col justify-center pt-24 pb-16">
         <div class="absolute inset-0 z-0">
-            <img src="banner.jpeg" alt="Fondo" class="w-full h-full object-cover opacity-25 filter blur-xs">
-            <div class="absolute inset-0 bg-gradient-to-b from-[#06040a]/90 via-[#06040a]/40 to-[#06040a]"></div>
+            <div class="absolute inset-0 bg-[#06040a]"></div>
         </div>
         <div class="absolute inset-0 overflow-hidden pointer-events-none z-10"><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
             
-            <!-- CONTENEDOR DEL NUEVO LOGO OFICIAL -->
+            <!-- CONTENEDOR DEL LOGO OFICIAL -->
             <div class="flex justify-center mb-6">
                 <img src="logo.jpeg" alt="Wash Control Pro Logo" class="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-full shadow-[0_0_30px_rgba(59,130,246,0.3)] border border-blue-500/20 bg-slate-950/50 p-2">
             </div>
 
-            <div class="text-center max-w-4xl mx-auto mb-16">
+            <div class="text-center max-w-4xl mx-auto mb-12">
                 <span class="inline-flex items-center gap-2 bg-blue-500/10 text-blue-400 text-xs font-black px-4 py-2 rounded-full uppercase tracking-widest border border-blue-500/30 mb-6 shadow-[0_0_15px_rgba(59,130,246,0.2)]"><i class="fa-solid fa-shield-halved"></i> Control Centralizado Antifraude y Métricas Reales</span>
                 <h1 class="bubble-title text-4xl sm:text-6xl font-black tracking-tight leading-none uppercase">BLINDA TU CAJA Y OPERACIÓN CON <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400">WASH CONTROL PRO</span></h1>
                 <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">Toma el control absoluto de tu autolavado desde un único dispositivo en pista. Monitorea el flujo diario, blíndate contra reclamaciones falsas y descarga cierres de caja perfectos en Excel.</p>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch max-w-6xl mx-auto">
-                <div class="lg:col-span-7 flex flex-col justify-center">
+
+            <!-- ENTORNO VISUAL DE PRESENTACIÓN: BANNER AL 100% Y OPERARIO EN PARALELO -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch max-w-6xl mx-auto mb-16">
+                <!-- Imagen en Pista Operario -->
+                <div class="lg:col-span-6 flex flex-col justify-center">
                     <div class="relative bg-slate-900 rounded-xl p-2 pb-0 shadow-[0_0_50px_rgba(59,130,246,0.15)] border border-slate-700/60 overflow-hidden h-full flex flex-col">
                         <div class="flex items-center justify-between px-4 py-3 border-b border-slate-800 bg-slate-950/80 rounded-t-lg">
                             <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span><span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span><span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span></div>
                             <div class="bg-slate-900 text-[11px] text-slate-400 px-8 py-1 rounded-md border border-slate-800 flex items-center gap-1.5"><i class="fa-solid fa-lock text-emerald-400 text-[9px]"></i> washcontrolpro.github.io</div>
                             <div class="w-10"></div>
                         </div>
-                        <!-- Imagen de la aplicación real cargada -->
-                        <div class="bg-slate-950 overflow-y-auto flex-grow rounded-b-lg flex items-center justify-center min-h-[400px]">
+                        <div class="bg-slate-950 overflow-y-auto flex-grow rounded-b-lg flex items-center justify-center min-h-[350px]">
                             <img src="operario.jpeg" alt="Dashboard Wash Control Pro" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
-                <div class="lg:col-span-5 flex flex-col justify-between bg-slate-950/80 rounded-xl p-6 border border-slate-800/80 shadow-2xl backdrop-blur-md relative">
-                    <div>
-                        <div class="flex items-center gap-2 text-cyan-400 font-black text-xs uppercase tracking-wider mb-3"><i class="fa-solid fa-circle-play animate-pulse"></i> Demostración en Video</div>
-                        <h2 class="text-xl font-black uppercase text-white mb-2">Mira el Sistema en Acción</h2>
-                        <p class="text-slate-400 text-xs leading-relaxed mb-6">Descubre en este video cómo registrar turnos de forma ágil, blindar el inventario de valor y automatizar las cuentas de tu pista.</p>
-                        
-                        <!-- REPRODUCTOR DE YOUTUBE INTEGRADO DIRECTO -->
-                        <div class="w-full aspect-video bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-inner">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/A6vwQ_uiKUw?autoplay=1&mute=1&loop=1&playlist=A6vwQ_uiKUw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                
+                <!-- NUEVA UBICACIÓN DESTACADA DEL BANNER: GRANDE Y SIN OPACIDADES -->
+                <div class="lg:col-span-6 flex flex-col justify-center">
+                    <div class="rounded-xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 p-1">
+                        <img src="banner.jpeg" alt="Wash Control Pro Presentación" class="w-full h-full object-cover rounded-lg">
                     </div>
-                    <div class="mt-6 pt-4 border-t border-slate-900"><p class="text-[11px] text-slate-400 leading-tight"><i class="fa-solid fa-circle-check text-emerald-400"></i> Sistema optimizado para alto rendimiento operativo en pista.</p></div>
                 </div>
             </div>
+
+            <!-- SECCIÓN DEL VIDEO DEMOSTRATIVO CORREGIDO PARA FORMATO SHORT -->
+            <div class="max-w-4xl mx-auto bg-slate-950/80 rounded-xl p-6 border border-slate-800/80 shadow-2xl backdrop-blur-md">
+                <div class="text-center mb-6">
+                    <div class="inline-flex items-center gap-2 text-cyan-400 font-black text-xs uppercase tracking-wider mb-2"><i class="fa-solid fa-circle-play animate-pulse"></i> Demostración en Video</div>
+                    <h2 class="text-2xl font-black uppercase text-white">Mira el Sistema en Acción</h2>
+                    <p class="text-slate-400 text-sm max-w-xl mx-auto mt-1">Descubre cómo registrar turnos de forma ágil, blindar el inventario de valor y automatizar las cuentas de tu pista.</p>
+                </div>
+                <!-- Reproductor optimizado con la ruta de Shorts para evitar bloqueos -->
+                <div class="w-full aspect-video bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-inner max-w-3xl mx-auto">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/A6vwQ_uiKUw?autoplay=1&mute=1&loop=1&playlist=A6vwQ_uiKUw&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
         </div>
     </header>
 
@@ -76,7 +84,7 @@
             <p class="mt-4 text-sm text-slate-400">Adquiera su licencia mediante un único pago. Sin contratos ni mensualidades.</p>
         </div>
 
-        <!-- Tarjeta Comparativa Visual de Krea integrada -->
+        <!-- Tarjeta Comparativa Visual -->
         <div class="max-w-4xl mx-auto mb-16 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 shadow-2xl">
             <img src="comparativa.jpeg" alt="Comparativa de Versiones" class="w-full object-cover">
         </div>
@@ -144,7 +152,6 @@
                         <button onclick="cambiarMetodo('qr')" id="btn-tab-qr" class="w-1/2 text-center py-2 text-xs font-bold uppercase tracking-wider rounded-md bg-blue-600 text-white transition-all"><i class="fa-solid fa-qrcode mr-1"></i> Código QR</button>
                         <button onclick="cambiarMetodo('breb')" id="btn-tab-breb" class="w-1/2 text-center py-2 text-xs font-bold uppercase tracking-wider rounded-md text-slate-400 hover:text-white transition-all"><i class="fa-solid fa-bolt mr-1"></i> Sistema Bre-B</button>
                     </div>
-                    <!-- Foto QR enlazada correctamente -->
                     <div id="contenido-qr" class="bg-white text-slate-900 p-4 rounded-xl shadow-2xl space-y-3 text-center transition-all">
                         <div class="flex items-center justify-center gap-2 font-black text-xs text-[#002447] uppercase tracking-wider"><i class="fa-solid fa-building-columns"></i> QR Banco de Bogotá</div>
                         <div class="w-full max-w-[180px] mx-auto aspect-square bg-slate-100 rounded-lg flex items-center justify-center border border-slate-200 overflow-hidden">
