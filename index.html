@@ -24,13 +24,15 @@
     </style>
 </head>
 <body class="bg-[#06040a] text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
-    <header class="relative overflow-hidden min-h-screen flex flex-col justify-center pt-24 pb-16">
+    
+    <!-- HEADER AJUSTADO: Eliminado min-h-screen para evitar el bache negro artificial -->
+    <header class="relative overflow-hidden flex flex-col justify-center pt-20 pb-4">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-[#06040a]"></div>
         </div>
         <div class="absolute inset-0 overflow-hidden pointer-events-none z-10"><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div></div>
+        
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
-
             <!-- CABECERA EN DOS COLUMNAS -->
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center max-w-6xl mx-auto mb-16">
                 <div class="md:col-span-5 flex justify-center lg:justify-end">
@@ -45,14 +47,11 @@
 
             <!-- ENTORNO VISUAL DE PRESENTACIÓN -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-6xl mx-auto mb-8">
-                <!-- Contenedor Izquierdo: Foto Operario limpia -->
                 <div class="lg:col-span-6 h-full flex flex-col justify-center">
                     <div class="relative bg-slate-950 rounded-xl p-2 shadow-[0_0_50px_rgba(59,130,246,0.15)] border border-slate-800 overflow-hidden w-full h-full lg:h-[432px] flex items-center justify-center">
                         <img src="operario.jpeg" alt="Dashboard Wash Control Pro" class="w-full h-full object-cover rounded-lg">
                     </div>
                 </div>
-                
-                <!-- Contenedor Derecho: Banner Comercial Completo -->
                 <div class="lg:col-span-6 h-full flex flex-col justify-center">
                     <div class="rounded-xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 p-2 flex items-center justify-center h-full lg:h-[432px]">
                         <img src="banner.jpeg" alt="Wash Control Pro Presentación" class="w-full h-full object-contain rounded-lg">
@@ -60,9 +59,9 @@
                 </div>
             </div>
 
-            <!-- LÍNEA MEJORADA CON TRUCO DE ANTI-CACHÉ (?v=2) PARA FORZAR LA CARGA DE LA IMAGEN -->
+            <!-- BANNER "BLINDAJE Y CONTROL TOTAL" -->
             <div class="max-w-6xl mx-auto mb-16 rounded-xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 p-2">
-                <img src="propuesta.jpg?v=2" alt="Blindaje y Control Total para su Autolavado" class="w-full h-auto object-contain rounded-lg">
+                <img src="propuesta.jpg" alt="Blindaje y Control Total para su Autolavado" class="w-full h-auto object-contain rounded-lg">
             </div>
 
             <!-- SECCIÓN DEL VIDEO DEMOSTRATIVO -->
@@ -78,24 +77,28 @@
             </div>
 
             <!-- IMAGEN DEL CIERRE DE CAJA EN EXCEL -->
-            <div class="max-w-4xl mx-auto mb-16 rounded-xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 p-2">
+            <div class="max-w-4xl mx-auto mb-4 rounded-xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 p-2">
                 <img src="cierre-excel.jpg" alt="06:00 PM: El Cierre de Caja Perfecto a Un Solo Clic con Wash Control Pro" class="w-full h-auto object-contain rounded-lg">
             </div>
-
         </div>
-    </header>
+    </header> <!-- CIERRE DEL HEADER JUSTO AQUÍ PARA CORREGIR LA ESTRUCTURA -->
 
-    <!-- SECCIÓN DE PRECIOS -->
-    <section id="precios" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-slate-950/40 rounded-3xl border border-slate-900 my-10">
+    <!-- SECCIÓN DE PRECIOS COMPACTADA (py-12 en lugar de py-20 para eliminar el bache negro) -->
+    <section id="precios" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-slate-950/40 rounded-3xl border border-slate-900 my-4">
+        
+        <!-- Foto comparativa arriba abriendo la sección, ahora perfectamente pegada al Excel -->
         <div class="max-w-4xl mx-auto mb-12 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 shadow-2xl">
             <img src="comparativa.jpeg" alt="Comparativa de Versiones" class="w-full object-cover">
         </div>
+
+        <!-- Títulos justo encima de las 3 tarjetas de ventas -->
         <div class="text-center max-w-2xl mx-auto mb-12">
             <span class="text-blue-400 font-bold text-xs uppercase tracking-widest">SISTEMA COMPLETO DE POR VIDA</span>
             <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight mt-2">Nuestras 3 Versiones Comerciales</h2>
             <p class="mt-4 text-sm text-slate-400">Adquiera su licencia mediante un único pago. Sin contratos ni mensualidades.</p>
         </div>
 
+        <!-- Las 3 tarjetas comerciales -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
             <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between shadow-xl">
                 <div>
@@ -161,7 +164,7 @@
             </div>
             <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-2xl shadow-xl flex flex-col gap-2">
                 <h3 class="text-base font-bold text-blue-400 flex items-center gap-2.5"><i class="fa-solid fa-car-side text-xl text-cyan-400"></i> Distribución Comercial de Flota</h3>
-                <p class="text-xs text-slate-300 leading-relaxed">Analiza el mix de tráfico de la pista classifying las ventas entre las 6 categorías del sistema (Motes, Sedanes, Camionetas, Vans y Camiones). Ideal para ajustar estrategias de publicidad y controlar insumos.</p>
+                <p class="text-xs text-slate-300 leading-relaxed">Analiza el mix de tráfico de la pista clasificando las ventas entre las 6 categorías del sistema (Motos, Sedanes, Camionetas, Vans y Camiones). Ideal para ajustar estrategias de publicidad y controlar insumos.</p>
             </div>
             <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-2xl shadow-xl flex flex-col gap-2">
                 <h3 class="text-base font-bold text-blue-400 flex items-center gap-2.5"><i class="fa-solid fa-clock-history text-xl text-teal-400"></i> Logística e Identificación de Picos</h3>
@@ -250,7 +253,7 @@
                     <p class="text-xs text-slate-300 leading-relaxed pb-4">No. El software se ejecuta como una Aplicación Web Progresiva a través de un enlace cifrado privado. Se puede añadir como un acceso directo al escritorio del celular en menos de 5 segundos, operando a pantalla completa como cualquier App nativa pero consumiendo cero espacio de almacenamiento.</p>
                 </div>
             </div>
-            <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+            <div class="faq-item bg-slate-900/40 border border-slate-900/80 rounded-xl overflow-hidden transition-all duration-300">
                 <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
                     9. ¿Qué pasa si el administrador borra un registro por error? Auditoría de pista.
                     <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
