@@ -17,9 +17,9 @@
         .bubble:nth-child(5) { left: 88%; width: 50px; height: 50px; animation-duration: 10s; animation-delay: 4.5s; }
         .bogota-gradient { background: linear-gradient(135deg, #002447 0%, #000f1f 100%); }
         
-        /* Estilos específicos para la interactividad suave del acordeón de FAQs */
+        /* Acordeón FAQs Suave */
         .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out, padding 0.3s ease; }
-        .faq-item.active .faq-answer { max-height: 200px; padding-top: 12px; }
+        .faq-item.active .faq-answer { max-height: 500px; padding-top: 12px; }
         .faq-item.active .faq-toggle-icon { transform: rotate(180deg); color: #e6007e; }
     </style>
 </head>
@@ -31,14 +31,11 @@
         <div class="absolute inset-0 overflow-hidden pointer-events-none z-10"><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
 
-            <!-- BLOQUE DE CABECERA EN DOS COLUMNAS: LOGO A LA IZQUIERDA Y TEXTOS A LA DERECHA -->
+            <!-- CABECERA EN DOS COLUMNAS -->
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center max-w-6xl mx-auto mb-16">
-                <!-- Columna Izquierda: El Logo Imponente -->
                 <div class="md:col-span-5 flex justify-center lg:justify-end">
                     <img src="logo.jpg" alt="Wash Control Pro Emblema" class="w-full max-w-[280px] sm:max-w-[340px] md:max-w-full object-contain rounded-2xl shadow-[0_0_50px_rgba(59,130,246,0.2)] border border-blue-500/10 bg-slate-950/40 p-1">
                 </div>
-                
-                <!-- Columna Derecha: Títulos y Textos Comerciales -->
                 <div class="md:col-span-7 text-center md:text-left flex flex-col items-center md:items-start">
                     <span class="inline-flex items-center gap-2 bg-blue-500/10 text-blue-400 text-xs font-black px-4 py-2 rounded-full uppercase tracking-widest border border-blue-500/30 mb-6 shadow-[0_0_15px_rgba(59,130,246,0.2)]"><i class="fa-solid fa-shield-halved"></i> Control Centralizado Antifraude y Métricas Reales</span>
                     <h1 class="bubble-title text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight uppercase">BLINDA TU CAJA Y OPERACIÓN CON <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400">WASH CONTROL PRO</span></h1>
@@ -46,58 +43,59 @@
                 </div>
             </div>
 
-            <!-- ENTORNO VISUAL DE PRESENTACIÓN: ALTURAS ALINEADAS SIMÉTRICAMENTE -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-6xl mx-auto mb-16">
-                <!-- Contenedor Izquierdo: Operario en Pista -->
-                <div class="lg:col-span-6 h-full flex flex-col justify-between">
-                    <div class="relative bg-slate-900 rounded-xl p-2 pb-0 shadow-[0_0_50px_rgba(59,130,246,0.15)] border border-slate-700/60 overflow-hidden w-full flex flex-col h-full">
-                        <div class="flex items-center justify-between px-4 py-3 border-b border-slate-800 bg-slate-950/80 rounded-t-lg">
-                            <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span><span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span><span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span></div>
-                            <div class="bg-slate-900 text-[11px] text-slate-400 px-8 py-1 rounded-md border border-slate-800 flex items-center gap-1.5"><i class="fa-solid fa-lock text-emerald-400 text-[9px]"></i> washcontrolpro.github.io</div>
-                            <div class="w-10"></div>
-                        </div>
-                        <div class="bg-slate-950 flex-grow rounded-b-lg flex items-center justify-center overflow-hidden aspect-video lg:aspect-auto lg:h-[380px]">
-                            <img src="operario.jpeg" alt="Dashboard Wash Control Pro" class="w-full h-full object-cover object-top">
-                        </div>
+            <!-- ENTORNO VISUAL DE PRESENTACIÓN (FOTOS COMPLETAS Y LIMPIAS) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-6xl mx-auto mb-8">
+                <!-- Contenedor Izquierdo: Foto Operario limpia -->
+                <div class="lg:col-span-6 h-full flex flex-col justify-center">
+                    <div class="relative bg-slate-950 rounded-xl p-2 shadow-[0_0_50px_rgba(59,130,246,0.15)] border border-slate-800 overflow-hidden w-full h-full lg:h-[432px] flex items-center justify-center">
+                        <img src="operario.jpeg" alt="Dashboard Wash Control Pro" class="w-full h-full object-cover rounded-lg">
                     </div>
                 </div>
                 
-                <!-- Contenedor Derecho: Banner Comercial Nítido Alineado a la misma Altura -->
+                <!-- Contenedor Derecho: Banner Comercial Completo (object-contain) -->
                 <div class="lg:col-span-6 h-full flex flex-col justify-center">
                     <div class="rounded-xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 p-2 flex items-center justify-center h-full lg:h-[432px]">
-                        <img src="banner.jpeg" alt="Wash Control Pro Presentación" class="w-full h-full object-cover rounded-lg">
+                        <img src="banner.jpeg" alt="Wash Control Pro Presentación" class="w-full h-full object-contain rounded-lg">
                     </div>
                 </div>
             </div>
 
-            <!-- SECCIÓN DEL VIDEO DEMOSTRATIVO CON EL NUEVO VIDEO ACTUALIZADO -->
+            <!-- AJUSTE APLICADO: BANNER NUEVO "BLINDAJE Y CONTROL TOTAL" JUSTO DEBAJO DE LAS 2 FOTOS ANTERIORES -->
+            <div class="max-w-6xl mx-auto mb-16 rounded-xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 p-2">
+                <img src="propuesta.jpg" alt="Blindaje y Control Total para su Autolavado" class="w-full h-auto object-contain rounded-lg">
+            </div>
+
+            <!-- SECCIÓN DEL VIDEO DEMOSTRATIVO -->
             <div class="max-w-4xl mx-auto bg-slate-950/80 rounded-xl p-6 border border-slate-800/80 shadow-2xl backdrop-blur-md">
                 <div class="text-center mb-6">
                     <div class="inline-flex items-center gap-2 text-cyan-400 font-black text-xs uppercase tracking-wider mb-2"><i class="fa-solid fa-circle-play animate-pulse"></i> Demostración en Video</div>
                     <h2 class="text-2xl font-black uppercase text-white">Mira el Sistema en Acción</h2>
                     <p class="text-slate-400 text-sm max-w-xl mx-auto mt-1">Descubre cómo registrar turnos de forma ágil, blindar el inventario de valor y automatizar las cuentas de tu pista.</p>
                 </div>
-                <!-- Reproductor apuntando al nuevo video real de flujo en pista -->
                 <div class="w-full aspect-video bg-slate-900 rounded-xl overflow-hidden border border-slate-800 shadow-inner max-w-2xl mx-auto">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/bVmd1MCb43s?autoplay=1&mute=1&loop=1&playlist=bVmd1MCb43s&enablejsapi=1&origin=https://dediaz99-cyber.github.io" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/bVmd1MCb43s?autoplay=1&mute=1&loop=1&playlist=bVmd1MCb43s&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
         </div>
     </header>
 
+    <!-- SECCIÓN DE PRECIOS MODIFICADA (TÍTULOS ABAJO DE COMPARATIVA) -->
     <section id="precios" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-slate-950/40 rounded-3xl border border-slate-900 my-10">
+        
+        <!-- Foto comparativa arriba abriendo la sección -->
+        <div class="max-w-4xl mx-auto mb-12 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 shadow-2xl">
+            <img src="comparativa.jpeg" alt="Comparativa de Versiones" class="w-full object-cover">
+        </div>
+
+        <!-- Títulos reubicados justo encima de las 3 tarjetas de ventas -->
         <div class="text-center max-w-2xl mx-auto mb-12">
             <span class="text-blue-400 font-bold text-xs uppercase tracking-widest">SISTEMA COMPLETO DE POR VIDA</span>
             <h2 class="text-3xl sm:text-4xl font-black uppercase tracking-tight mt-2">Nuestras 3 Versiones Comerciales</h2>
             <p class="mt-4 text-sm text-slate-400">Adquiera su licencia mediante un único pago. Sin contratos ni mensualidades.</p>
         </div>
 
-        <!-- Tarjeta Comparativa Visual -->
-        <div class="max-w-4xl mx-auto mb-16 rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 shadow-2xl">
-            <img src="comparativa.jpeg" alt="Comparativa de Versiones" class="w-full object-cover">
-        </div>
-
+        <!-- Las 3 tarjetas comerciales -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
             <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between shadow-xl">
                 <div>
@@ -144,7 +142,7 @@
         </div>
     </section>
 
-    <!-- 🌐 NUEVA SECCIÓN ACOPLADA DE MÉTRICAS INTELIGENTES (ESTILO CORPORATIVO ADAPTADO) -->
+    <!-- SECCIÓN DE MÉTRICAS INTELIGENTES -->
     <section class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-slate-950/60 rounded-3xl border border-slate-900 backdrop-blur-md mb-12">
         <div class="text-center max-w-2xl mx-auto mb-10">
             <span class="text-pink-500 font-black text-xs uppercase tracking-widest"><i class="fa-solid fa-chart-pie animate-pulse"></i> Inteligencia Artificial de Datos</span>
@@ -172,60 +170,171 @@
         </div>
     </section>
 
-    <!-- ❓ NUEVA SECCIÓN ACOPLADA: MÓDULO INTERACTIVO DE FAQS (ESTILO ACORDEÓN) -->
+    <!-- MÓDULO COMPLETADO CON LAS 14 PREGUNTAS -->
     <section class="py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-slate-950/60 rounded-3xl border border-slate-900 backdrop-blur-md mb-16">
         <div class="text-center max-w-xl mx-auto mb-8">
             <span class="text-cyan-400 font-bold text-xs uppercase tracking-widest">RESOLUCIÓN DE OBJECIONES</span>
-            <h2 class="text-2xl font-black uppercase text-white mt-1">Preguntas Frecuentes</h2>
+            <h2 class="text-2xl font-black uppercase text-white mt-1">Preguntas Frecuentes (FAQs)</h2>
         </div>
 
-        <div class="space-y-4 max-w-3xl mx-auto">
-            <!-- FAQ 1 -->
+        <div class="space-y-3 max-w-3xl mx-auto">
+            <!-- Pregunta 1 -->
             <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
-                <button type="button" class="faq-question w-full text-left p-4 font-bold text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
-                    ¿Qué pasa si se va el internet en el autolavado?
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    1. ¿Qué pasa si se va el internet en el autolavado? Instalación local.
                     <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
                 </button>
                 <div class="faq-answer px-4 bg-slate-950/30">
-                    <p class="text-xs text-slate-300 leading-relaxed pb-4">¡El sistema nunca se detiene! La aplicación cuenta con tecnología de almacenamiento local inteligente. Toda la información registrada en pista por el administrador se guarda de forma segura en la memoria del celular y permite descargar el reporte consolidado de Excel en caliente, con o sin señal de internet.</p>
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">¡El sistema nunca se detiene! La aplicación cuenta con tecnología de almacenamiento local inteligente en el navegador. Toda la información registrada en pista por el administrador se almacena de forma segura en la memoria interna del teléfono celular y permite descargar el archivo completo de Excel en caliente, con o sin señal de internet.</p>
                 </div>
             </div>
 
-            <!-- FAQ 2 -->
+            <!-- Pregunta 2 -->
             <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
-                <button type="button" class="faq-question w-full text-left p-4 font-bold text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
-                    ¿Los lavadores u operarios necesitan saber de tecnología?
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    2. ¿Los lavadores u operarios necesitan saber de tecnología? Interfaz en pista.
                     <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
                 </button>
                 <div class="faq-answer px-4 bg-slate-950/30">
-                    <p class="text-xs text-slate-300 leading-relaxed pb-4">No, para nada. La interfaz en pista fue diseñada específicamente para ser operada de manera ágil desde cualquier teléfono celular. Registrar un vehículo toma menos de 10 segundos y el sistema asigna tarifas automáticamente según el tamaño, evitando errores humanos en las cuentas.</p>
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">No, para nada. La interfaz en pista fue diseñada específicamente para ser operada de manera ágil desde cualquier teléfono celular. Registrar un vehículo toma menos de 10 segundos y el sistema asigna tarifas automáticamente, evitando que los operarios cometan errores en las cuentas o alteren los precios.</p>
                 </div>
             </div>
 
-            <!-- FAQ 3 -->
+            <!-- Pregunta 3 -->
             <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
-                <button type="button" class="faq-question w-full text-left p-4 font-bold text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
-                    ¿Cómo se realiza el pago del software? ¿Hay mensualidades?
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    3. ¿Cómo se realiza el pago del software? ¿Hay mensualidades? Costos.
                     <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
                 </button>
                 <div class="faq-answer px-4 bg-slate-950/30">
-                    <p class="text-xs text-slate-300 leading-relaxed pb-4">Manejamos un modelo transparente de pago único por licenciamiento y personalización inicial de la aplicación para tu negocio. No estás amarrado a mensualidades obligatorias, cobros ocultos ni contratos forzosos. Tú compras tu versión y el software es 100% tuyo de por vida.</p>
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">Manejamos un modelo de pago único por licenciamiento y personalización de la aplicación para tu negocio. No estás amarrado a mensualidades obligatorias ni contratos forzosos. Tú compras tu versión (Estándar, Plus o Premium) y el software es completamente tuyo para operar de forma indefinida.</p>
                 </div>
             </div>
 
-            <!-- FAQ 4 -->
+            <!-- Pregunta 4 -->
             <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
-                <button type="button" class="faq-question w-full text-left p-4 font-bold text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
-                    ¿Cómo funciona el módulo de inventario de objetos de valor?
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    4. ¿Cómo funciona el inventario de objetos de valor? Blindaje legal.
                     <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
                 </button>
                 <div class="faq-answer px-4 bg-slate-950/30">
-                    <p class="text-xs text-slate-300 leading-relaxed pb-4">Es nuestro sistema de blindaje legal. Al ingresar cada vehículo, el administrador registra los objetos encontrados en el habitáculo o baúl (gafas, maletas, herramientas). Esta información queda sellada en el reporte de la jornada, protegiendo al negocio contra reclamaciones falsas o malintencionadas de los clientes.</p>
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">Es nuestro módulo de blindaje legal. Al ingresar cada vehículo, el administrador está obligado a registrar los objetos encontrados (gafas, maletas, billeteras, herramientas). Esta información queda registrada de forma inalterable en el reporte de Excel de la jornada, protegiendo al establecimiento contra reclamaciones falsas.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    5. ¿Puedo cambiar los precios de las tarifas yo mismo en el futuro? Actualizaciones.
+                    <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer px-4 bg-slate-950/30">
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">Las tarifas se configuran a código cerrado para garantizar que los operarios en pista no puedan manipularlas bajo ninguna circunstancia (evitando fraudes). Cualquier cambio futuro en la estructura de precios o adición de personal se gestiona de forma segura a través de nuestro soporte técnico como una actualización independiente.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 6 -->
+            <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    6. ¿Cuántos vehículos o historial de filas puede aguantar el sistema? Capacidad de datos.
+                    <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer px-4 bg-slate-950/30">
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">El motor matemático de exportación está blindado y optimizado con fórmulas dinámicas extendidas capaces de consolidar hasta 5.000 filas de transacciones continuas. Esto le permite al dueño acumular un archivo histórico de meses o un año completo de operaciones en pista sin pérdida de velocidad.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 7 -->
+            <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    7. ¿Cómo se calculan las comisiones de los lavadores? Nómina automatizada.
+                    <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer px-4 bg-slate-950/30">
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">El sistema aplica de manera automática una tasa del 3% (configurable en la compra) sobre el valor cobrado de cada servicio. En el reporte final, genera un módulo de Liquidación de Nómina individual que desglosa cuántos vehículos atendió cada operario y el monto exacto a pagar al final del día.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 8 -->
+            <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    8. ¿Se requiere instalar una aplicación pesada en la tienda de Google o Apple? Compatibilidad PWA.
+                    <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer px-4 bg-slate-950/30">
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">No. El software se ejecuta como una Aplicación Web Progresiva a través de un enlace cifrado privado. Se puede añadir como un acceso directo al escritorio del celular en menos de 5 segundos, operando a pantalla completa como cualquier App nativa pero consumiendo cero espacio de almacenamiento.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 9 -->
+            <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    9. ¿Qué pasa si el administrador borra un registro por error? Auditoría de pista.
+                    <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer px-4 bg-slate-950/30">
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">Cada movimiento de eliminación genera una alerta de seguridad en la pantalla que reordena de forma inalterable el consecutivo numérico de los turnos en pista. Esto evita vacíos en los reportes, asegurando que el dueño siempre pueda detectar si un turno fue omitido o borrado de forma malintencionada.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 10 -->
+            <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    10. ¿El sistema soporta camiones o flotas de carga pesada? Categorías comerciales.
+                    <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer px-4 bg-slate-950/30">
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">Sí, el sistema está completamente configurado y tabulado para soportar 6 tipos de flota comercial diferenciada: Motos, Sedanes, Camionetas (SUV), Vans, Camiones Pequeños y Camiones Grandes. Cada categoría cuenta con su propia matriz de precios y se consolida de forma independiente en el reporte.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 11 -->
+            <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    11. ¿Cómo se asegura la integridad de los datos si se apaga el dispositivo? Persistencia.
+                    <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer px-4 bg-slate-950/30">
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">Cada vez que se presiona el botón "Registrar Ingreso", el sistema realiza una inyección automática e instantánea en el motor de persistencia del dispositivo móvil. Si el celular se apaga, se descarga o se cierra la ventana, los datos permanecen intactos al encenderlo de nuevo.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 12 -->
+            <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    12. ¿Los reportes de Excel son estáticos o interactivos? Fórmulas vivas.
+                    <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer px-4 bg-slate-950/30">
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">Son 100% dinámicos y ejecutivos. La exportación no inserta texto plano, sino fórmulas reales de Microsoft Excel (como SUMIF y COUNTIF) vinculadas al rango de 5.000 filas. Esto permite al dueño arrastrar, filtrar o consolidar datos históricos y ver los resultados actualizarse en tiempo real.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 13 -->
+            <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    13. ¿Existe algún límite en la cantidad de registros por jornada? Sin bloqueos.
+                    <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer px-4 bg-slate-950/30">
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">No hay límites técnicos para la operación de la jornada diaria. El sistema en pista puede procesar de forma fluida el flujo masivo de vehículos que requiera el autolavado, manteniendo la velocidad de procesamiento al máximo gracias al procesamiento liviano en memoria local.</p>
+                </div>
+            </div>
+
+            <!-- Pregunta 14 -->
+            <div class="faq-item bg-slate-900/40 border border-slate-800/80 rounded-xl overflow-hidden transition-all duration-300">
+                <button type="button" class="faq-question w-full text-left p-4 font-bold text-xs sm:text-sm text-white flex justify-between items-center bg-slate-900/20 hover:bg-slate-900/60 outline-none">
+                    14. ¿Cómo se unifican las marcas de tiempo en el reporte definitivo? Control cronológico.
+                    <i class="fa-solid fa-chevron-down faq-toggle-icon text-xs text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer px-4 bg-slate-950/30">
+                    <p class="text-xs text-slate-300 leading-relaxed pb-4">Para garantizar una trazabilidad absoluta de la caja, el sistema captura de manera combinada la Fecha actual y la Hora exacta (DD/MM/AAAA - HH:MM AM/PM) en un solo bloque cronológico por defecto, permitiendo al dueño ordenar y agrupar el histórico con total precisión.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- SECCIÓN DE ADQUISICIÓN Y PAGOS -->
     <section id="adquisicion" class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div class="bg-slate-950 rounded-2xl shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 border border-slate-800">
             <div class="p-8 sm:p-10 lg:col-span-6 flex flex-col justify-center">
@@ -295,19 +404,15 @@
             navigator.clipboard.writeText(texto).then(() => { alert("¡Llave copiada con éxito! Ya puede pegarla en su banco."); });
         }
 
-        // NUEVO SCRIPT COMPATIBLE CON TAILWIND: Manejo fluido del acordeón interactivo de FAQs
+        // Manejo del acordeón interactivo de FAQs para las 14 preguntas
         const faqItems = document.querySelectorAll('.faq-item');
         faqItems.forEach(item => {
             const button = item.querySelector('.faq-question');
             button.addEventListener('click', () => {
                 const isActive = item.classList.contains('active');
-                
-                // Cerrar todas las demás preguntas abiertas para mantener el orden visual
                 faqItems.forEach(otherItem => {
                     otherItem.classList.remove('active');
                 });
-                
-                // Si el elemento no estaba activo, lo abrimos
                 if (!isActive) {
                     item.classList.add('active');
                 }
